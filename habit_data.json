@@ -1,0 +1,55 @@
+{
+    "Exercise": {
+        "goal": 30,
+        "log": {
+            "2024-08-01": true,
+            "2024-08-02": false,
+            "2024-08-03": true,
+            "2025-02-12": true
+        }
+    },
+    "Read Book": {
+        "goal": 20,
+        "log": {
+            "2024-08-01": true,
+            "2024-08-02": true,
+            "2024-08-30": true
+        }
+    },
+    "read book": {
+        "goal": 0,
+        "log": {
+            "2024-10-01": true
+        }
+    },
+    "playing cricket": {
+        "goal": 45,
+        "log": {
+            "2024-10-01": true
+        }
+    },
+    "playing": {
+        "goal": 20,
+        "log": {
+            "2025-02-12": true
+        }
+    },
+    "exercise": {
+        "goal": 0,
+        "log": {
+            "2025-02-12": true
+        }
+    },
+    "diet": {
+        "goal": 0,
+        "log": {
+            "2025-02-13": true
+        }
+    },
+    "mas": {
+        "goal": 10,
+        "log": {
+            "2025-02-13": true
+        }
+    }
+}
