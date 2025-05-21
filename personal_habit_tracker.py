@@ -6,19 +6,19 @@ from datetime import datetime
 DATA_FILE = 'habit_data.json'
 
 def load_data():
-    """Load habit data from the JSON file."""
+    
     if not os.path.exists(DATA_FILE):
         return {}
     with open(DATA_FILE, 'r') as file:
         return json.load(file)
 
 def save_data(data):
-    """Save habit data to the JSON file."""
+    
     with open(DATA_FILE, 'w') as file:
         json.dump(data, file, indent=4)
 
 def log_habit(habit_name):
-    """Log a habit completion for today."""
+    
     data = load_data()
     date_today = datetime.now().strftime('%Y-%m-%d')
     if habit_name not in data:
@@ -28,7 +28,7 @@ def log_habit(habit_name):
     print(f"Logged habit: {habit_name} for {date_today}")
 
 def view_progress(habit_name):
-    """View progress for a specific habit."""
+    
     data = load_data()
     if habit_name not in data:
         print("Habit not found.")
@@ -54,7 +54,7 @@ def view_progress(habit_name):
         print("Goal not yet achieved.")
 
 def set_goal(habit_name, goal_days):
-    """Set a goal for a specific habit."""
+    
     data = load_data()
     if habit_name not in data:
         data[habit_name] = {'goal': goal_days, 'log': {}}
@@ -64,7 +64,7 @@ def set_goal(habit_name, goal_days):
     print(f"Set goal of {goal_days} days for habit: {habit_name}")
 
 def generate_report():
-    """Generate a summary report of all habits."""
+    
     data = load_data()
     print("\nHabit Tracker Report:")
     for habit_name, habit_data in data.items():
@@ -85,7 +85,7 @@ def generate_report():
             print("Goal not yet achieved.")
 
 def main():
-    """Main menu for the Habit Tracker application."""
+    
     while True:
         print("\nHabit Tracker")
         print("1. Log Habit")
